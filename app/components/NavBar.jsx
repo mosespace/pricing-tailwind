@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Logo from "../../public/about-logo.png";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { FiMenu } from "react-icons/fi";
 
 export default function NavBar() {
   const [showHumbug, setShowHumbug] = useState(false);
@@ -30,7 +30,7 @@ export default function NavBar() {
           onClick={HandleClick}
           className={showHumbug ? "cursor-pointer hidden " : "lg:hidden"}
         >
-          <HiOutlineMenuAlt3 size={30} />
+          <FiMenu size={30} />
         </button>
       </nav>
     </main>
