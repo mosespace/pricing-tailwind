@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { ImCross } from "react-icons/im";
 import Logo from "../../public/about-logo.png";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
@@ -29,7 +28,7 @@ export default function NavBar() {
 
         <button
           onClick={HandleClick}
-          className={showHumbug ? "cursor-pointer hidden " : "lg:hidden" }
+          className={showHumbug ? "cursor-pointer hidden " : "lg:hidden"}
         >
           <HiOutlineMenuAlt3 size={30} />
         </button>
