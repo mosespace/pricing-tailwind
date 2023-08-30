@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Clone() {
   return (
-    <section className='py-4 px-[1rem]'>
+    <section className='py-4 px-[2rem]'>
       <div className='flex flex-col items-center justify-center px-2 gap-3'>
         <div id='#main-header' className='pt-[5rem]'>
           <h1 className='font-bold text-3xl text-center'>
@@ -11,7 +11,7 @@ export default function Clone() {
         </div>
         <div
           id='#main-header-description'
-          className=' text-center text-[1.1rem]'
+          className=' text-center text-[1.1rem] cursor-text'
         >
           <p>
             Ready-to-Use Tailwind CSS templates, Specially Designed for
