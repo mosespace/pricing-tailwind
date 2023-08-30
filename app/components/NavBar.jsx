@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Logo from "../../public/about-logo.png";
 import { FiMenu } from "react-icons/fi";
+import Link from "next/link";
 
 export default function NavBar() {
   const [showHumbug, setShowHumbug] = useState(false);
@@ -11,7 +12,7 @@ export default function NavBar() {
   }
   return (
     <main>
-      <nav className='bg-indigo-50 py-4 px-12 text-sky-950 flex justify-between align-middle md:px-22'>
+      <nav className='bg-indigo-50 py-4 px-12 text-sky-950 flex justify-between items-center md:px-22'>
         <div className='flex gap-2 items-center'>
           <div className='relative h-10 w-10'>
             <div>
@@ -32,6 +33,11 @@ export default function NavBar() {
         >
           <FiMenu size={30} />
         </button>
+        <div className="hidden lg:block">
+          <Link href='/next-page'>
+            <h1 className='font-bold text-xl'>Next Page</h1>
+          </Link>
+        </div>
       </nav>
     </main>
   );
