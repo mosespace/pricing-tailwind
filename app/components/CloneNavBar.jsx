@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import Logo from "../../public/Logo.svg";
+// import Logo from "../../public/Logo.svg";
 import { FiMenu } from "react-icons/fi";
 import { BsFillSunFill } from "react-icons/bs";
 import Link from "next/link";
