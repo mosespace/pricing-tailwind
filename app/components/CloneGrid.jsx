@@ -7,8 +7,8 @@ import UsedImg from "../../public/tt.jpg";
 
 export default function CloneGrid() {
   return (
-    <section className='py-4 px-[1rem]'>
-      <div className='grid grid-cols-1 gap-4'>
+    <section className='py-4 px-[2rem] sm:px-[5rem]'>
+      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
         <div className='bg-slate-900 rounded-[0.5rem] flex flex-col'>
           <div className='relative h-52'>
             <Image
