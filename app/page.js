@@ -1,15 +1,9 @@
-import Image from "next/image";
-import NavBar from "./components/NavBar";
-import Text from "./components/Text";
+import Index from "./components/Index";
 
 export default function Home() {
   return (
     <main>
-      <NavBar />
-      <Text/>
-      {/* <Form/> */}
-      {/* <Cards />
-      <Hero /> */}
+      <Index />
     </main>
   );
 }
