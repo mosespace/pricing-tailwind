@@ -1,6 +1,7 @@
 import "../styles/main.scss";
 import { Inter } from "next/font/google";
 import NavBar from "./components/NavBar";
+import AuthProvider from "@/context/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,10 +14,12 @@ export default function RootLayout({ children }) {
   // bg-sky-950
   return (
     <html lang='en'>
-      <body className={inter.className ? " bg-slate-950" : ""}>
-        {/* <NavBar /> */}
-        {children}
-      </body>
+      <AuthProvider>
+        <body className={inter.className ? " bg-slate-950" : ""}>
+          {/* <NavBar /> */}
+          {children}
+        </body>
+      </AuthProvider>
     </html>
   );
 }
